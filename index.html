@@ -19,7 +19,29 @@
   <body>
     <!-- HEADER -->
     <header class="container">
-      <img src="assets/img/logo.svg" alt="Logo-Tripadvisor" />
+      <div class="logo-search">
+        <img src="assets/img/logo.svg" alt="Logo-Tripadvisor" />
+
+        <!-- SEARCH -->
+        <form class="search" action="/Search">
+          <img src="assets/img/search.png" alt="icone-search" />
+          <input
+            type="search"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            required=""
+            name="q"
+            title="Rechercher"
+            role="searchbox"
+            aria-label="Rechercher"
+            aria-controls="typeahead_results"
+            aria-autocomplete="list"
+            value=""
+          />
+        </form>
+      </div>
 
       <!-- NAV MENU -->
       <nav class="menu">
