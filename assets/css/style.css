@@ -20,6 +20,10 @@ header img {
   height: 100%;
 }
 
+header img:hover {
+  cursor: pointer;
+}
+
 /* NAV MENU */
 .menu {
   display: flex;
@@ -28,12 +32,21 @@ header img {
 }
 
 .menu .menu-item {
-  margin: 0px 15px;
+  margin: 0px 20px;
 }
 
 .menu-item {
   display: flex;
   align-items: center;
+}
+
+.menu-item:hover {
+  background-color: #c1c1c150;
+  padding: 8px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+  margin: 0 12px;
 }
 
 .menu button {
@@ -43,8 +56,12 @@ header img {
   color: white;
   padding: 12px 15px;
   border-radius: 25px;
-  cursor: pointer;
   border: none;
+}
+
+.menu button:hover {
+  cursor: pointer;
+  background-color: #333333;
 }
 
 /* MAIN */
@@ -63,6 +80,13 @@ h1 span {
 .elements-nav {
   display: flex;
   margin-top: 20px;
+}
+
+.elements-nav p:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: background-color 0.1s linear;
 }
 
 .elements-nav p {
@@ -101,6 +125,12 @@ h1 span {
   width: 100%;
 }
 
+.left img:hover {
+  cursor: pointer;
+  opacity: 85%;
+  transition: opacity 0.1s linear;
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -113,6 +143,12 @@ h1 span {
 
 .right img:first-child {
   margin-bottom: 3px;
+}
+
+.right img:hover {
+  cursor: pointer;
+  opacity: 85%;
+  transition: opacity 0.1s linear;
 }
 
 /* PETITE NAV EUROPE */
@@ -139,6 +175,12 @@ h1 span {
   align-items: center;
 }
 
+.links-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: text-decoration 0.1s linear;
+}
+
 .links-item svg {
   margin-left: 3px;
 }
@@ -162,6 +204,10 @@ h1 span {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #333333;
   width: 560px;
+}
+
+.left p:hover {
+  cursor: pointer;
 }
 
 .descript .right {
@@ -190,7 +236,7 @@ h1 span {
   padding-bottom: 25px;
 }
 
-.right button {
+.organize button {
   font-size: 15px;
   font-weight: 500;
   font-family: "Trip Sans Med";
@@ -198,8 +244,13 @@ h1 span {
   color: white;
   padding: 20px 20px;
   border-radius: 20px;
-  cursor: pointer;
   border: none;
+}
+
+.organize button:hover {
+  cursor: pointer;
+  background-color: black;
+  transition: background-color 0.1s linear;
 }
 
 /* COLONNE 1 */
@@ -246,11 +297,11 @@ h1 span {
 }
 
 /* COLONNE 2 */
-.carrou-item {
+.carou-item {
   position: relative;
 }
 
-.carrou-item img {
+.carou-item img {
   width: 268px;
   height: 201px;
   object-fit: cover;
@@ -260,14 +311,14 @@ h1 span {
   position: absolute;
 }
 
-.carrou-item h3 {
+.carou-item h3 {
   font-size: 18px;
   font-family: "Trip Sans Reg";
   font-weight: 600;
   margin: 5px 0 5px 0;
 }
 
-.carrou-item p {
+.carou-item p {
   font-size: 14px;
   font-family: "Trip Sans Reg";
   font-weight: 580;
@@ -285,8 +336,8 @@ h1 span {
   color: #333333;
 }
 
-/* CARROUSEL */
-.carrousel {
+/* CAROUSEL */
+.carousel {
   margin-top: 30px;
   width: 800px;
   gap: 15px;
@@ -296,14 +347,28 @@ h1 span {
   overflow-x: scroll;
 }
 
-.carrousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
   display: none;
+}
+
+.carou-item:hover {
+  cursor: pointer;
+  opacity: 80%;
+  transition: opacity 0.1s linear;
+}
+
+.carou-item h3:hover {
+  text-decoration: underline;
 }
 
 /* BANDEAU */
 .popup {
   width: 100%;
   margin-bottom: 60px;
+}
+
+.popup:hover {
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -325,6 +390,8 @@ footer p {
   font-size: 16px;
 }
 
-footer span {
+footer a {
   font-weight: 700;
+  color: #333333;
+  text-decoration: none;
 }
