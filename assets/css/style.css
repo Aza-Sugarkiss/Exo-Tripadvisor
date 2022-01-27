@@ -40,6 +40,11 @@ header img:hover {
   align-items: center;
 }
 
+.menu-item img {
+  width: 24px;
+  height: 24px;
+}
+
 .menu-item:hover {
   background-color: #c1c1c150;
   padding: 8px;
@@ -104,8 +109,10 @@ h1 span {
   margin: 0;
 }
 
-.elements-nav svg {
+.elements-nav img {
   margin-right: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 /* LES PHOTOS */
@@ -325,8 +332,9 @@ h1 span {
   color: #333333;
 }
 
-.score svg {
-  color: #00aa6c;
+.score img {
+  width: 68px;
+  height: 12px;
 }
 
 .score span {
