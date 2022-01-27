@@ -67,6 +67,7 @@ header img:hover {
 .menu button:hover {
   cursor: pointer;
   background-color: #333333;
+  transition: background-color 0.1s linear;
 }
 
 /* MAIN */
@@ -128,6 +129,30 @@ h1 span {
   display: flex;
 }
 
+.left {
+  position: relative;
+}
+
+.left button {
+  font-size: 12px;
+  padding: 10px 10px;
+  font-family: "Trip Sans Med";
+  background: black;
+  color: white;
+  border-radius: 25%;
+  border: none;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  /* display: flex; */
+}
+
+.left button:hover {
+  cursor: pointer;
+  background-color: #333333;
+  transition: background-color 0.1s linear;
+}
+
 .left img {
   width: 100%;
 }
@@ -145,7 +170,7 @@ h1 span {
 }
 
 .right img {
-  height: 49.4%;
+  height: 49.7%;
 }
 
 .right img:first-child {
@@ -304,18 +329,10 @@ h1 span {
 }
 
 /* COLONNE 2 */
-.carou-item {
-  position: relative;
-}
-
 .carou-item img {
   width: 268px;
   height: 201px;
   object-fit: cover;
-}
-
-.logo-2021 {
-  position: absolute;
 }
 
 .carou-item h3 {
@@ -367,6 +384,64 @@ h1 span {
 
 .carou-item h3:hover {
   text-decoration: underline;
+}
+
+.carou-item {
+  position: relative;
+}
+
+.label {
+  display: flex;
+  position: relative;
+  position: absolute;
+  bottom: 102px;
+  left: 8px;
+}
+
+.logo-2021 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.label img {
+  width: 33px;
+  height: 44px;
+}
+
+.label .owl {
+  width: 32px;
+  height: 32px;
+}
+
+.label span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.favorites {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+  transition: background-color 0.1s linear;
+}
+
+.favorites img {
+  width: 24px;
+  height: 24px;
 }
 
 /* BANDEAU */
